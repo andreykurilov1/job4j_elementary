@@ -11,6 +11,9 @@ public class ArgMethod {
     public static void hello(int age) {
         System.out.println(age);
     }
+    public static void hello(String name1,String name2,String name3) {
+        System.out.println(name1 + " " + name2 + " " + name3);
+    }
     public static void main(String[] args) {
         String name = "Andrey Kurilov";
         int age = 26;
@@ -21,7 +24,7 @@ public class ArgMethod {
 
         ArgMethod.hello(age);
 
-        ArgMethod.hello(name + name + name);
+        ArgMethod.hello(name, name, name);
 
     }
 }
