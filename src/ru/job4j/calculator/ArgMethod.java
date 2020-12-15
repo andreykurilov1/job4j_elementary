@@ -1,20 +1,27 @@
 package ru.job4j.calculator;
 
-public class ArgMethod {
-
-    public static void hello(String name) {
+    public class ArgMethod {
+        public static void hello(String name) {
         System.out.println("Hello, " + name);
     }
+
     public static void hello(String name, int age) {
+
         System.out.println(name + ", " + age);
     }
+
     public static void hello(int age) {
+
         System.out.println(age);
     }
-    public static void hello(String name1,String name2,String name3) {
+
+    public static void hello(String name1, String name2, String name3) {
+
         System.out.println(name1 + " " + name2 + " " + name3);
     }
+
     public static void main(String[] args) {
+
         String name = "Andrey Kurilov";
         int age = 26;
 
