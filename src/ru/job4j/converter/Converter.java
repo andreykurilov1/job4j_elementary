@@ -17,5 +17,15 @@ public class Converter {
         int dollar = Converter.rubleToDollar(580);
         System.out.println(euro + " euro.");
         System.out.println(dollar + " dollar.");
+        int inE = 700;
+        int expectedE = 10;
+        int outEuro = Converter.rubleToEuro(inE);
+        boolean passedEuro = expectedE == outEuro;
+        int inD = 580;
+        int expectedD = 9;
+        int outDollar = Converter.rubleToDollar(inD);
+        boolean passedDollar = expectedD == outDollar;
+        System.out.println(inE + " рублей это " + expectedE + " euro : " + passedEuro);
+        System.out.println(inD + " рублей это " + expectedD + " dollar : " + passedDollar);
     }
 }
